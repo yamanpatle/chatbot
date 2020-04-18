@@ -41,5 +41,5 @@ def gaitonde():
   chat = Chat(pair,reflections )
   chat.converse()
   
-#Run the chatbot.  
+#Run the chatbot  
 gaitonde()
