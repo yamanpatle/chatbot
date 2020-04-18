@@ -1,0 +1,45 @@
+#we need nltk library to be installed.
+from nltk.chat.util import Chat, reflections
+
+#Creating pairs that our chatbot will respond to.
+pair = [
+    [
+        'my name is (.*)',['Hi %1']
+    ],
+    [
+        '(hi|hey|hello|holla|hola|lavde)',['Bol Lavde','Bol na maderchod','kya aand khare be']
+    ],
+    [
+        '(.*) in (.*) is fun',['%1 in %2 is indeed fun' ]
+    ],
+    [
+        'do you know about (.*)',['Sorry, but Google knows about it https://www.google.com/search?q=%1&rlz=1C5CHFA_enIN892IN892&oq=%1&aqs=chrome..69i57j69i61l2.2107j0j7&sourceid=chrome&ie=UTF-8']
+    ],
+    [
+     '(.*) created you ?|(.*) is your father ?', ['Yaman Patle is my father']
+    ],
+    [
+        'how is the weather in (.*)', ['the weather in %1 is amazing like always']
+    ],
+    [
+        '(.*)help(.*)', ['I can help you']
+    ],
+    [
+        '(.*) is your name ?|(.*) are you ?', ['Jaake dekh rikaard me Bhagwaan hai ya insaan....Lawde']
+    ],
+    [
+        '(.*) is your location ?|(.*) do you live ?|your location',['I Live https://www.google.com/search?q=my+location&rlz=1C5CHFA_enIN892IN892&oq=my+location&aqs=chrome..69i57j0l7.2765j0j7&sourceid=chrome&ie=UTF-8']
+    ],
+    [
+        '(.*) is my location ?|(.*) am i ?|my location',['You are here https://www.google.com/search?q=my+location&rlz=1C5CHFA_enIN892IN892&oq=my+location&aqs=chrome..69i57j0l7.2765j0j7&sourceid=chrome&ie=UTF-8']
+    ]
+]
+
+#creating a def and method to calland initiate our chatbot.
+def gaitonde():
+  print("Mera naam Gaitonde hai ! \nSab kuch lowercase English me likhna. \nquit dabao aur maa chudao ") 
+  chat = Chat(pair,reflections )
+  chat.converse()
+  
+#Run the chatbot.  
+gaitonde()
