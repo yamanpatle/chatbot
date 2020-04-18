@@ -1,7 +1,7 @@
 #we need nltk library to be installed.
 from nltk.chat.util import Chat, reflections
 
-#Creating pairs that our chatbot will respond to.
+#Creating pairs that our chatbot will respond to. This is a very basic set of questions.
 pair = [
     [
         'my name is (.*)',['Hi %1']
