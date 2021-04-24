@@ -35,7 +35,7 @@ pair = [
     ]
 ]
 
-#creating a def and method to calland initiate our chatbot.
+#creating a def and method to call and initiate our chatbot.
 def gaitonde():
   print("Mera naam Gaitonde hai ! \nSab kuch lowercase English me likhna. \nquit dabao aur maa chudao ") 
   chat = Chat(pair,reflections )
